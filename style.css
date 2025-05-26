@@ -1,0 +1,96 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body dan font */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #ffffff);
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Container utama */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+}
+
+/* Judul utama */
+h1, h2, h3 {
+  color: #0277bd;
+  margin-bottom: 20px;
+}
+
+/* Paragraf */
+p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Link */
+a {
+  color: #0288d1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #01579b;
+  text-decoration: underline;
+}
+
+/* Tombol */
+button {
+  background-color: #0288d1;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-color: #01579b;
+}
+
+/* Box materi */
+.card {
+  background: #e1f5fe;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 12px rgba(2, 136, 209, 0.2);
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* List materi */
+ul.material-list {
+  list-style-type: square;
+  padding-left: 20px;
+  color: #01579b;
+}
+
+/* Responsive untuk mobile */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 15px;
+  }
+  h1 {
+    font-size: 1.8rem;
+  }
+  p, button {
+    font-size: 1rem;
+  }
+}
